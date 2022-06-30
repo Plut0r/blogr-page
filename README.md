@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Git repo link](https://your-solution-url.com)
+- Solution URL: [Git repo link](https://github.com/Plut0r/blogr-page)
 - Live Site URL: [Netlify live url](https://your-live-site-url.com)
 
 
