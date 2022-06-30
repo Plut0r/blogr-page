@@ -1,0 +1,437 @@
+/* color variables */
+:root {
+    /* Primary */
+    --light-red-cta-text: hsl(356, 100%, 66%);
+    --very-light-red-cta-hover-bg: hsl(355, 100%, 74%);
+    --very-dark-blue-headings: hsl(208, 49%, 24%);
+    /* Neutral */
+    --white-text: hsl(0, 0%, 100%);
+    --light-white-text: hsl(0, 0%, 89%);
+    --light-white-text-2: hsl(0, 0%, 60%);
+    --grayish-blue-footer-text: hsl(240, 2%, 79%);
+    --very-dark-grayish-blue-body-copy: hsl(207, 13%, 34%);
+    --very-dark-black-blue-footer-bg: hsl(240, 10%, 16%);
+    /* Gradient */
+    /* bg-gradient Intro/CTA mobile nav */
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    /* bg-gradient body */
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
+
+/* base properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.nav-link {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: var(--white-text);
+}
+
+header {
+    background-color: var(--very-light-red);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    border-bottom-left-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-head {
+    color: var(--white-text);
+}
+
+.intro-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: var(--light-white-text);
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.btn-div button:first-child {
+    background-color: var(--white-text);
+    color: var(--light-red);
+}
+
+.btn-div button:first-child:hover {
+    background-color: var(--very-light-red-cta-hover-bg);
+    color: var(--white-text);
+}
+
+.btn-div button:last-child {
+    border: 1px solid var(--white-text);
+    background-color: var(--light-red);
+    color: var(--white-text);
+}
+
+.btn-div button:last-child:hover {
+    background-color: var(--white-text);
+    color: var(--light-red-cta-text);
+}
+
+h2 {
+    text-align: center;
+    color: var(--very-dark-blue-headings);
+    font-weight: 600;
+}
+
+.edit-text,
+.article-text {
+    color: var(--light-white-text-2);
+    font-weight: 600;
+}
+
+.edit-head,
+.article-head {
+    color: var(--very-dark-blue-headings);
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+.phone-div {
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--very-dark-desaturated-blue);
+    margin-top: 50px;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.state-head {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white-text);
+}
+
+.state-text {
+    color: var(--light-white-text);
+}
+
+footer {
+    background-color: var(--very-dark-black-blue-footer-bg);
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top-right-radius: 5rem;
+}
+
+h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--white-text);
+    text-align: center;
+}
+
+.footer-link {
+    color: var(--grayish-blue-footer-text);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: var(--grayish-blue-footer-text);
+}
+
+
+
+/* for larger screens */
+@media screen and (min-width: 900px) {
+    header {
+        background-image: url("../images/bg-pattern-intro-desktop.svg");
+    }
+
+    .navbar-brand {
+        padding-left: 90px;
+    }
+
+    .navbar {
+        padding-top: 20px;
+    }
+
+    .nav-link {
+        color: var(--light-white-text);
+    }
+
+    .button-link {
+        background-color: var(--white-text);
+        border-radius: 1.5rem;
+        padding-left: 15px;
+        text-align: center;
+    }
+
+    .button-link:hover {
+        background-color: var(--very-light-red-cta-hover-bg);
+    }
+
+    .ab {
+        color: var(--light-red);
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .intro-head {
+        font-weight: 600;
+        font-size: 4rem;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+    }
+
+    .intro-div {
+        margin-top: 100px;
+    }
+
+    .edit-desk {
+        width: 600px;
+        margin-top: -100px;
+    }
+
+    .section-1-a {
+        display: flex;
+    }
+
+    .section-1 {
+        margin-top: 100px;
+    }
+
+    h2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .section-1-a {
+        margin-top: 60px;
+    }
+
+    .edit-div {
+        margin-left: 100px;
+    }
+
+    .edit-text {
+        width: 77%;
+    }
+
+    .phone-div {
+        height: 250px;
+    }
+
+    .phone-div-2 {
+        display: flex;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .phone-img {
+        width: 400px;
+        margin-top: -50px;
+    }
+
+    .state-div {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-left: 50px;
+        margin-top: -90px;
+    }
+
+    .state-text {
+        width: 65%;
+    }
+
+    .laptop-img {
+        width: 90%;
+    }
+
+    .laptop-div {
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .article-div {
+        margin-right: 320px;
+        margin-top: 90px;
+        width: 70%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-item {
+        margin-left: -22px;
+    }
+    
+    .ul {
+        margin-left: -20px;
+    }
+}
+
+
+/* styling menu collapse background for screens less than 577px */
+@media screen and (max-width: 577px) {
+    #navbarCollapse {
+        background-color: var(--light-red);
+    }
+}
+
+/* for smaller screens */
+@media screen and (max-width: 900px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    header {
+        background-image: url("../images/bg-pattern-intro-mobile.svg");
+    }
+
+    .nav-link {
+        color: var(--white-text);
+    }
+
+    .desk-img {
+        display: none;
+    }
+
+    .navbar-brand {
+        padding-top: 50px;
+    }
+
+    .intro-div {
+        position: relative;
+        padding-top: 150px;
+    }
+
+    .navbar {
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+    }
+
+    .intro-head {
+        width: 80%;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .intro-text {
+        text-align: center;
+        font-size: 1.1rem;
+        width: 70%;
+    }
+
+    .dropdown-menu {
+        background-color: var(--light-white-text);
+    }
+
+    .section-1-a {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .edit-div {
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .section-1 {
+        margin-top: 70px;
+    }
+
+    .edit-img-div {
+        margin-top: 30px;
+    }
+
+    .edit-mobile {
+        width: 100%;
+    }
+
+    .edit-desk {
+        width: 100%;
+    }
+
+    .phone-img {
+        width: 100%;
+    }
+
+    .state-div {
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
+
+    .laptop-img {
+        width: 100%;
+    }
+
+    .article-div {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .laptop-div {
+        margin-top: 50px;
+    }
+
+    .product-section {
+        margin-top: 20px;
+    }
+
+    .footer-item {
+        margin-left: -30px;
+    }
+
+
+}
